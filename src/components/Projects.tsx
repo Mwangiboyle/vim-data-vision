@@ -2,8 +2,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github, Eye } from "lucide-react";
+import { useState } from "react";
 
 const Projects = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [showAllProjects, setShowAllProjects] = useState(false);
+
   const projects = [
     {
       title: "Customer Churn Prediction",
@@ -52,10 +56,44 @@ const Projects = () => {
       tags: ["Lua", "Python", "Neovim", "Machine Learning"],
       category: "Open Source",
       status: "Ongoing"
+    },
+    {
+      title: "Data Pipeline Automation",
+      description: "Scalable ETL pipeline processing 10TB+ daily with Apache Airflow and real-time monitoring.",
+      image: "/api/placeholder/400/250",
+      tags: ["Apache Airflow", "Python", "SQL", "Docker"],
+      category: "Data Engineering",
+      status: "Completed"
+    },
+    {
+      title: "AI Code Assistant",
+      description: "VSCode extension leveraging LLMs for intelligent code completion and refactoring suggestions.",
+      image: "/api/placeholder/400/250",
+      tags: ["TypeScript", "OpenAI API", "VSCode", "Node.js"],
+      category: "Open Source",
+      status: "In Progress"
+    },
+    {
+      title: "Financial Risk Model",
+      description: "Deep learning model for credit risk assessment with interpretable feature importance analysis.",
+      image: "/api/placeholder/400/250",
+      tags: ["Python", "XGBoost", "SHAP", "Pandas"],
+      category: "Machine Learning",
+      status: "Completed"
     }
   ];
 
-  const categories = ["All", "Machine Learning", "NLP", "Computer Vision", "Time Series", "Open Source"];
+  const categories = ["All", "Machine Learning", "NLP", "Computer Vision", "Time Series", "Open Source", "Data Engineering"];
+
+  // Filter projects based on selected category
+  const filteredProjects = selectedCategory === "All" 
+    ? projects 
+    : projects.filter(project => project.category === selectedCategory);
+
+  // Show only first 6 projects initially, or all if expanded
+  const displayedProjects = showAllProjects 
+    ? filteredProjects 
+    : filteredProjects.slice(0, 6);
 
   return (
     <section id="projects" className="py-20 bg-background">
@@ -74,8 +112,12 @@ const Projects = () => {
           {categories.map((category) => (
             <Button
               key={category}
-              variant="outline"
+              variant={selectedCategory === category ? "default" : "outline"}
               size="sm"
+              onClick={() => {
+                setSelectedCategory(category);
+                setShowAllProjects(false); // Reset to show limited projects when changing category
+              }}
               className="hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               {category}
@@ -85,7 +127,7 @@ const Projects = () => {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {displayedProjects.map((project, index) => (
             <Card 
               key={project.title}
               className="group overflow-hidden hover:shadow-elegant transition-all duration-500 hover:scale-105"
@@ -145,12 +187,18 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Button variant="hero" size="lg">
-            View All Projects
-            <ExternalLink className="w-4 h-4 ml-2" />
-          </Button>
-        </div>
+        {filteredProjects.length > 6 && (
+          <div className="text-center mt-12">
+            <Button 
+              variant="hero" 
+              size="lg"
+              onClick={() => setShowAllProjects(!showAllProjects)}
+            >
+              {showAllProjects ? 'Show Less Projects' : 'View All Projects'}
+              <ExternalLink className="w-4 h-4 ml-2" />
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   );
