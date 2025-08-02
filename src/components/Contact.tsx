@@ -39,26 +39,26 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "contact@yourname.com",
-      href: "mailto:contact@yourname.com"
+      value: "josephmwangi6039@gmail.com",
+      href: "mailto:josephmwangi6039@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+254 746462591",
+      href: "tel:+2547464462591"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Nairobi, KE",
       href: "#"
     }
   ];
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/Mwangiboyle", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/josephmwangiboyle/", label: "LinkedIn" },
     { icon: Twitter, href: "https://twitter.com", label: "Twitter" }
   ];
 
