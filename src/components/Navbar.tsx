@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Portfolio
+              Joseph
             </span>
           </div>
 

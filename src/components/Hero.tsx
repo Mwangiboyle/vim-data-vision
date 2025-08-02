@@ -71,7 +71,7 @@ const Hero = () => {
           <Button 
             variant="outline" 
             size="lg"
-            className="text-white border-white/30 hover:bg-white/10 backdrop-blur-sm"
+            className="text-blue border-white/30 hover:bg-white/10 backdrop-blur-sm"
           >
             <Download className="mr-2 h-4 w-4" />
             Download Resume
