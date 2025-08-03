@@ -19,15 +19,15 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-slide-up">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-6">
-            Data Scientist
-            <span className="block text-primary">Machine Learning</span>
-            <span className="block">Engineer</span>
+            Joseph Mwangi
+            <span className="block text-primary">ML Engineer</span>
+            <span className="block">& Data Scientist</span>
           </h1>
           
           <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Developing ML models & AI systems that solve real-world problems. 
-            A passionate <span className="text-accent font-semibold">Neovim</span> user 
-            building the future with code.
+            Turning complex data into smart business solutions. From predictive analytics to 
+            real-time AI systems, I build models that actually work. Coffee-powered coding 
+            sessions in <span className="text-accent font-semibold">Neovim</span> since 2019.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

@@ -6,22 +6,22 @@ const Services = () => {
   const services = [
     {
       icon: Brain,
-      title: "Machine Learning Solutions",
-      description: "Custom ML models for classification, regression, clustering, and recommendation systems tailored to your business needs.",
+      title: "Custom ML Solutions",
+      description: "I build machine learning models that solve real business problems - from fraud detection to recommendation engines. Every model is tailored to your specific needs and data.",
       features: ["Model Development", "Performance Optimization", "A/B Testing", "Model Deployment"],
       color: "text-primary"
     },
     {
       icon: BarChart3,
-      title: "Data Science & Analytics",
-      description: "Transform raw data into actionable insights through advanced statistical analysis and visualization techniques.",
+      title: "Data Analytics & Insights",
+      description: "Turn your messy data into clear, actionable insights. I specialize in finding patterns that drive business growth and operational efficiency.",
       features: ["Data Analysis", "Statistical Modeling", "Data Visualization", "Business Intelligence"],
       color: "text-tech-blue"
     },
     {
       icon: Bot,
-      title: "AI System Development",
-      description: "End-to-end AI solutions including NLP, computer vision, and intelligent automation systems.",
+      title: "End-to-End AI Systems",
+      description: "From initial concept to production deployment. I handle the entire AI development lifecycle, ensuring your solution is robust and scalable.",
       features: ["NLP Solutions", "Computer Vision", "AI Automation", "Custom AI APIs"],
       color: "text-accent"
     }
@@ -35,7 +35,7 @@ const Services = () => {
             My Services
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive AI and ML solutions to drive your business forward
+            Specialized AI & ML services that have helped Kenyan businesses increase efficiency by 40% on average
           </p>
         </div>
 

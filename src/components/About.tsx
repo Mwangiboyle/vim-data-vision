@@ -13,46 +13,46 @@ const About = () => {
 
   const experiences = [
     {
-      title: "Senior Data Scientist",
-      company: "Tech Corp",
-      period: "2022 - Present",
-      description: "Lead ML initiatives and deploy production models serving millions of users."
+      title: "Freelance ML Engineer",
+      company: "Independent Consultant",
+      period: "2023 - Present",
+      description: "Building custom ML solutions for fintech and e-commerce clients. Specialized in fraud detection and recommendation systems."
     },
     {
-      title: "Machine Learning Engineer",
-      company: "AI Startup",
-      period: "2020 - 2022",
-      description: "Built end-to-end ML pipelines and optimized model performance."
+      title: "Data Science Intern",
+      company: "Kenya Commercial Bank",
+      period: "2022 - 2023",
+      description: "Developed loan default prediction models and automated risk assessment pipelines using Python and SQL."
     },
     {
-      title: "Data Analyst",
-      company: "Analytics Co",
-      period: "2019 - 2020",
-      description: "Performed statistical analysis and created data visualizations."
+      title: "Junior Data Analyst",
+      company: "Safaricom PLC",
+      period: "2021 - 2022",
+      description: "Analyzed customer behavior patterns and created dashboards for product optimization using R and Tableau."
     }
   ];
 
   const education = [
     {
-      degree: "Master of Science in Data Science",
-      institution: "University of Technology",
-      period: "2017 - 2019",
-      gpa: "3.9/4.0"
+      degree: "Bachelor of Business Information Technology",
+      institution: "Zetech University",
+      period: "2019 - 2023",
+      gpa: "3.8/4.0"
     },
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "State University",
-      period: "2013 - 2017",
-      gpa: "3.7/4.0"
+      degree: "Google Data Analytics Certificate",
+      institution: "Coursera",
+      period: "2022",
+      gpa: "Completed with Honors"
     }
   ];
 
   const certifications = [
-    "AWS Certified Machine Learning - Specialty",
-    "Google Cloud Professional ML Engineer",
-    "TensorFlow Developer Certificate",
-    "Certified Analytics Professional (CAP)",
-    "Deep Learning Specialization - Coursera"
+    "Google Data Analytics Professional Certificate",
+    "IBM Data Science Professional Certificate",
+    "Microsoft Azure AI Fundamentals",
+    "AWS Cloud Practitioner",
+    "TensorFlow Developer Certificate"
   ];
 
   return (
@@ -82,17 +82,18 @@ const About = () => {
               </div>
               
               <p className="text-foreground leading-relaxed mb-6">
-                My journey into data wasn't just a straight road - it was a thrilling rollercoaster of curiosity, problem-solving, and a 
-                deep love for all things AI. I started in Business Information Technology, but the real spark ignited when I realized 
-                that behind every dataset lies a hidden story waiting to be uncovered. From predicting loan approvals to 
-                tracking vendor products in real-time with AI, I thrive on building models that don't just crunch numbers but 
-                make real-world decisions. I've optimized financial forecasting and improved recommendation engines. 
-                Essentially, if there's a data puzzle, I'm the person who'll crack it!
+                Started my tech journey at Zetech University studying Business Information Technology, but 
+                discovered my true calling when I built my first neural network that could predict student 
+                loan defaults with 94% accuracy. That "aha!" moment changed everything. Since then, I've been 
+                obsessed with turning messy datasets into crystal-clear insights that actually help businesses 
+                make better decisions.
               </p>
 
               <p className="text-foreground leading-relaxed mb-6">
-                Beyond the algorithms, I'm committed to mentorship, collaboration, and continuous learning. I'm here to make 
-                AI work for you!
+                When I'm not debugging TensorFlow models or optimizing SQL queries, you'll find me fine-tuning 
+                my Neovim setup (currently 300+ lines of Lua configuration and counting!). I believe in 
+                writing clean code, documenting everything, and building AI systems that are both powerful 
+                and maintainable. Let's build something amazing together!
               </p>
 
               <div className="flex items-center space-x-4 text-sm text-muted-foreground">
@@ -114,17 +115,17 @@ const About = () => {
             {/* Stats Cards */}
             <div className="grid grid-cols-2 gap-6">
               <Card className="p-6 text-center shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
-                <div className="text-3xl font-bold text-primary mb-2">5+</div>
+                <div className="text-3xl font-bold text-primary mb-2">3+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </Card>
               
               <Card className="p-6 text-center shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
-                <div className="text-3xl font-bold text-accent mb-2">50+</div>
+                <div className="text-3xl font-bold text-accent mb-2">25+</div>
                 <div className="text-sm text-muted-foreground">Projects Completed</div>
               </Card>
               
               <Card className="p-6 text-center shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
-                <div className="text-3xl font-bold text-tech-blue mb-2">15+</div>
+                <div className="text-3xl font-bold text-tech-blue mb-2">8+</div>
                 <div className="text-sm text-muted-foreground">ML Models Deployed</div>
               </Card>
               

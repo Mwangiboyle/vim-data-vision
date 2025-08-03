@@ -5,36 +5,36 @@ import { Star } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Sarah Chen",
-      role: "CTO at TechFlow",
-      company: "TechFlow Solutions",
+      name: "James Kariuki",
+      role: "Tech Lead",
+      company: "Fintech Kenya Ltd",
       avatar: "/api/placeholder/60/60",
       rating: 5,
-      content: "Outstanding work on our recommendation system. The ML model increased user engagement by 40% and the deployment was seamless. Their expertise in both data science and engineering is remarkable."
+      content: "Joseph delivered an exceptional fraud detection system for our mobile banking app. The model achieved 97% accuracy and reduced false positives by 60%. His attention to detail and understanding of the Kenyan market made all the difference."
     },
     {
-      name: "Mark Rodriguez",
-      role: "Data Science Manager",
-      company: "DataDriven Inc",
-      avatar: "/api/placeholder/60/60",
-      rating: 5,
-      content: "Delivered a complex NLP solution that exceeded our expectations. The real-time sentiment analysis system processes millions of documents daily with incredible accuracy. A true ML expert."
-    },
-    {
-      name: "Lisa Wang",
+      name: "Grace Wanjiku",
       role: "Product Manager",
-      company: "InnovateLab",
-      avatar: "/api/placeholder/60/60",
+      company: "E-commerce Solutions",
+      avatar: "/api/placeholder/60/60", 
       rating: 5,
-      content: "Their computer vision solution revolutionized our quality control process. 99%+ accuracy in defect detection and the system scales beautifully. Professional, reliable, and innovative."
+      content: "Working with Joseph was a game-changer for our recommendation engine. Customer engagement increased by 45% after implementing his ML solution. He explained complex concepts clearly and delivered exactly what we needed."
     },
     {
-      name: "David Kumar",
-      role: "Engineering Lead",
-      company: "AI Ventures",
+      name: "David Otieno",
+      role: "Data Manager",
+      company: "AgriTech Innovations",
       avatar: "/api/placeholder/60/60",
       rating: 5,
-      content: "Impressive MLOps implementation that streamlined our entire ML pipeline. The monitoring and automated retraining capabilities saved us countless hours. Highly recommended for any AI project."
+      content: "Joseph helped us build a crop yield prediction model that farmers across Kenya now rely on. His understanding of both technology and agriculture made this project incredibly successful. Highly recommended!"
+    },
+    {
+      name: "Mary Njeri",
+      role: "Operations Director", 
+      company: "Logistics Pro",
+      avatar: "/api/placeholder/60/60",
+      rating: 5,
+      content: "The supply chain optimization model Joseph created saved us 30% in transportation costs. His analytical approach and problem-solving skills are exceptional. Will definitely work with him again."
     }
   ];
 
@@ -46,7 +46,7 @@ const Testimonials = () => {
             Client Testimonials
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            What clients say about working with me on their AI and ML projects
+            Real feedback from clients who've seen their businesses transform through AI
           </p>
         </div>
 
@@ -91,9 +91,9 @@ const Testimonials = () => {
         {/* Stats Section */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { number: "50+", label: "Happy Clients" },
-            { number: "95%", label: "Project Success Rate" },
-            { number: "24/7", label: "Support Available" },
+            { number: "25+", label: "Happy Clients" },
+            { number: "96%", label: "Project Success Rate" },
+            { number: "Fast", label: "Response Time" },
             { number: "5★", label: "Average Rating" }
           ].map((stat, index) => (
             <div key={stat.label} className="text-center">
