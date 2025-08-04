@@ -74,7 +74,7 @@ const About = () => {
               <div className="flex items-center space-x-6 mb-6">
                 <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
                   <img 
-                    src="/lovable-uploads/ec6e3e13-ce66-47d9-9ffe-76209b42bd34.png" 
+                    src="/lovable-uploads/Untitled design.png" 
                     alt="Joseph Mwangi - AI/ML Specialist" 
                     className="w-full h-full object-cover"
                   />
