@@ -72,8 +72,12 @@ const About = () => {
           <div className="space-y-8">
             <Card className="p-8 shadow-card hover:shadow-elegant transition-all duration-300">
               <div className="flex items-center space-x-6 mb-6">
-                <div className="w-24 h-24 bg-gradient-primary rounded-full flex items-center justify-center">
-                  <Brain className="w-12 h-12 text-white" />
+                <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
+                  <img 
+                    src="/lovable-uploads/ec6e3e13-ce66-47d9-9ffe-76209b42bd34.png" 
+                    alt="Joseph Mwangi - AI/ML Specialist" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-foreground">AI/ML Specialist</h3>
