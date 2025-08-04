@@ -72,7 +72,7 @@ const About = () => {
           <div className="space-y-8">
             <Card className="p-8 shadow-card hover:shadow-elegant transition-all duration-300">
               <div className="flex items-center space-x-6 mb-6">
-                <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
+                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
                   <img 
                     src="/lovable-uploads/ec6e3e13-ce66-47d9-9ffe-76209b42bd34.png" 
                     alt="Joseph Mwangi - AI/ML Specialist" 
