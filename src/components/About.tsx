@@ -95,7 +95,7 @@ const About = () => {
 
               <p className="text-foreground leading-relaxed mb-6">
                 When I'm not debugging TensorFlow models or optimizing SQL queries, you'll find me fine-tuning 
-                my Neovim setup (currently 300+ lines of Lua configuration and counting!). I believe in 
+                my Neovim setup since 2025 (currently 300+ lines of Lua configuration and counting!). I believe in 
                 writing clean code, documenting everything, and building AI systems that are both powerful 
                 and maintainable. Let's build something amazing together!
               </p>
