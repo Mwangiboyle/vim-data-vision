@@ -16,7 +16,9 @@ const Projects = () => {
       tags: ["Python", "Scikit-learn", "Pandas", "XGBoost"],
       category: "Machine Learning",
       status: "Completed",
-      github: "https://github.com/yourusername/customer-churn-prediction"
+      github: "https://github.com/yourusername/customer-churn-prediction",
+      demo: "https://churn-prediction-demo.herokuapp.com",
+      blog: "https://yourblog.com/customer-churn-prediction-project"
     },
     {
       title: "Real-time Sentiment Analysis",
@@ -25,7 +27,9 @@ const Projects = () => {
       tags: ["Python", "BERT", "Kafka", "Docker"],
       category: "NLP",
       status: "Completed",
-      github: "https://github.com/yourusername/realtime-sentiment-analysis"
+      github: "https://github.com/yourusername/realtime-sentiment-analysis",
+      demo: "https://sentiment-analyzer-demo.netlify.app",
+      blog: "https://yourblog.com/realtime-sentiment-analysis-with-bert"
     },
     {
       title: "Computer Vision QA System",
@@ -34,7 +38,9 @@ const Projects = () => {
       tags: ["PyTorch", "OpenCV", "FastAPI", "AWS"],
       category: "Computer Vision",
       status: "Completed",
-      github: "https://github.com/yourusername/computer-vision-qa"
+      github: "https://github.com/yourusername/computer-vision-qa",
+      demo: "https://cv-qa-system.vercel.app",
+      blog: "https://yourblog.com/computer-vision-quality-assurance"
     },
     {
       title: "Time Series Forecasting",
@@ -43,7 +49,9 @@ const Projects = () => {
       tags: ["TensorFlow", "LSTM", "Prophet", "MLflow"],
       category: "Time Series",
       status: "In Progress",
-      github: "https://github.com/yourusername/time-series-forecasting"
+      github: "https://github.com/yourusername/time-series-forecasting",
+      demo: "https://forecast-demo.streamlit.app",
+      blog: "https://yourblog.com/lstm-time-series-forecasting"
     },
     {
       title: "Recommendation Engine",
@@ -52,7 +60,9 @@ const Projects = () => {
       tags: ["Python", "TensorFlow", "Redis", "Kubernetes"],
       category: "Recommender Systems",
       status: "Completed",
-      github: "https://github.com/yourusername/recommendation-engine"
+      github: "https://github.com/yourusername/recommendation-engine",
+      demo: "https://rec-engine-demo.herokuapp.com",
+      blog: "https://yourblog.com/scalable-recommendation-engine"
     },
     {
       title: "Neovim ML Plugin",
@@ -61,7 +71,9 @@ const Projects = () => {
       tags: ["Lua", "Python", "Neovim", "Machine Learning"],
       category: "Open Source",
       status: "Ongoing",
-      github: "https://github.com/yourusername/neovim-ml-plugin"
+      github: "https://github.com/yourusername/neovim-ml-plugin",
+      demo: "https://asciinema.org/a/neovim-ml-plugin-demo",
+      blog: "https://yourblog.com/neovim-ml-plugin-development"
     },
     {
       title: "Data Pipeline Automation",
@@ -70,7 +82,9 @@ const Projects = () => {
       tags: ["Apache Airflow", "Python", "SQL", "Docker"],
       category: "Data Engineering",
       status: "Completed",
-      github: "https://github.com/yourusername/data-pipeline-automation"
+      github: "https://github.com/yourusername/data-pipeline-automation",
+      demo: "https://airflow-demo.yourdomain.com",
+      blog: "https://yourblog.com/building-scalable-data-pipelines"
     },
     {
       title: "Financial Risk Model",
@@ -79,7 +93,9 @@ const Projects = () => {
       tags: ["Python", "XGBoost", "SHAP", "Pandas"],
       category: "Machine Learning",
       status: "Completed",
-      github: "https://github.com/yourusername/financial-risk-model"
+      github: "https://github.com/yourusername/financial-risk-model",
+      demo: "https://risk-model-demo.streamlit.app",
+      blog: "https://yourblog.com/interpretable-financial-risk-modeling"
     }
   ];
 
@@ -137,7 +153,11 @@ const Projects = () => {
                   <div className="text-muted-foreground text-sm">Project Preview</div>
                 </div>
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                  <Button size="sm" variant="secondary">
+                  <Button 
+                    size="sm" 
+                    variant="secondary"
+                    onClick={() => window.open(project.demo, '_blank')}
+                  >
                     <Eye className="w-4 h-4 mr-2" />
                     Demo
                   </Button>
@@ -181,7 +201,12 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="flex space-x-2">
-                  <Button size="sm" variant="outline" className="flex-1">
+                  <Button 
+                    size="sm" 
+                    variant="outline" 
+                    className="flex-1"
+                    onClick={() => window.open(project.blog, '_blank')}
+                  >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     View Details
                   </Button>
