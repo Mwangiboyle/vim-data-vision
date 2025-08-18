@@ -1,13 +1,12 @@
-import { Github, Linkedin, Twitter, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, Circle } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-    { icon: Mail, href: "mailto:contact@yourname.com", label: "Email" }
+    { icon: Github, href: "https://github.com/Mwangiboyle", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/josephmwangiboyle/", label: "LinkedIn" },
+    { icon: Twitter, href: "https://twitter.com", label: "Twitter" }
   ];
 
   const quickLinks = [
@@ -69,16 +68,16 @@ const Footer = () => {
             <div className="space-y-2 text-primary-foreground/80">
               <p>Ready to discuss your next AI project?</p>
               <a 
-                href="mailto:contact@yourname.com"
+                href="mailto:josephmwangi6039@gmail.com"
                 className="block hover:text-primary-foreground transition-colors"
               >
-                contact@yourname.com
+                josephmwangi6039@gmail.com
               </a>
               <a 
                 href="tel:+15551234567"
                 className="block hover:text-primary-foreground transition-colors"
               >
-                +1 (555) 123-4567
+                +254 746462591
               </a>
             </div>
           </div>
@@ -92,7 +91,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center space-x-2 text-primary-foreground/80 text-sm">
               <span>Built with</span>
-              <Heart className="w-4 h-4 text-red-400 fill-current" />
+              <Circle className="w-4 h-4 text-red-400 fill-current" />
               <span>and</span>
               <span className="text-neovim font-semibold">Neovim</span>
             </div>
