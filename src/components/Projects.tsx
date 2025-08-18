@@ -66,14 +66,6 @@ const Projects = () => {
       status: "Completed"
     },
     {
-      title: "AI Code Assistant",
-      description: "VSCode extension leveraging LLMs for intelligent code completion and refactoring suggestions.",
-      image: "/api/placeholder/400/250",
-      tags: ["TypeScript", "OpenAI API", "VSCode", "Node.js"],
-      category: "Open Source",
-      status: "In Progress"
-    },
-    {
       title: "Financial Risk Model",
       description: "Deep learning model for credit risk assessment with interpretable feature importance analysis.",
       image: "/api/placeholder/400/250",
