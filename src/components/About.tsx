@@ -16,28 +16,28 @@ const About = () => {
       title: "Freelance ML Engineer",
       company: "Independent Consultant",
       period: "2023 - Present",
-      description: "Building custom ML solutions for fintech and e-commerce clients. Specialized in fraud detection and recommendation systems."
+      description: "Building custom ML solutions for fintech and e-commerce clients. Specialized in fraud detection and recommendation systems. Also fine-tuned LLMs and developed RAG Systems."
     },
     {
-      title: "Data Science Intern",
-      company: "Kenya Commercial Bank",
-      period: "2022 - 2023",
+      title: "Machine Learning Engineer",
+      company: "Brain. AI",
+      period: "2023 - 2024",
       description: "Developed loan default prediction models and automated risk assessment pipelines using Python and SQL."
     },
     {
       title: "Junior Data Analyst",
-      company: "Safaricom PLC",
-      period: "2021 - 2022",
-      description: "Analyzed customer behavior patterns and created dashboards for product optimization using R and Tableau."
+      company: "Redfin(US)",
+      period: "2022 - 2023",
+      description: "Developed a machine learning model using Python, Scikit-learn to predict house prices from different areas"
     }
   ];
 
   const education = [
     {
-      degree: "Bachelor of Business Information Technology",
-      institution: "Zetech University",
-      period: "2019 - 2023",
-      gpa: "3.8/4.0"
+      degree: "Bachelor of Computer Science",
+      institution: "UoPeole University",
+      period: "2025 - 2027",
+      gpa: "3.2/4.0"
     },
     {
       degree: "Google Data Analytics Certificate",
@@ -48,8 +48,8 @@ const About = () => {
   ];
 
   const certifications = [
-    "Google Data Analytics Professional Certificate",
-    "IBM Data Science Professional Certificate",
+    "ALX Data Analytics Professional Certificate",
+    "ALX Professional Foundations Certificate",
     "Microsoft Azure AI Fundamentals",
     "AWS Cloud Practitioner",
     "TensorFlow Developer Certificate"
@@ -63,7 +63,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Passionate about transforming data into actionable insights and building intelligent systems
+            Am very Excited in  transforming data into actionable insights and building intelligent systems
           </p>
         </div>
 
@@ -86,7 +86,7 @@ const About = () => {
               </div>
               
               <p className="text-foreground leading-relaxed mb-6">
-                Started my tech journey at Zetech University studying Business Information Technology, but 
+                Started my tech journey at JKUAT University studying Industrial Chemistry, but 
                 discovered my true calling when I built my first neural network that could predict student 
                 loan defaults with 94% accuracy. That "aha!" moment changed everything. Since then, I've been 
                 obsessed with turning messy datasets into crystal-clear insights that actually help businesses 
@@ -94,8 +94,8 @@ const About = () => {
               </p>
 
               <p className="text-foreground leading-relaxed mb-6">
-                When I'm not debugging TensorFlow models or optimizing SQL queries, you'll find me fine-tuning 
-                my Neovim setup since 2025 (currently 300+ lines of Lua configuration and counting!). I believe in 
+                When I'm not debugging TensorFlow models or optimizing SQL queries, you'll find me solving 
+                sudoku puzzles, watching car racing and oudoor activities like cross-country bike riding. I believe in 
                 writing clean code, documenting everything, and building AI systems that are both powerful 
                 and maintainable. Let's build something amazing together!
               </p>
@@ -103,11 +103,11 @@ const About = () => {
               <div className="flex items-center space-x-4 text-sm text-muted-foreground">
                 <div className="flex items-center space-x-2">
                   <Code className="w-4 h-4 text-neovim" />
-                  <span>Neovim Enthusiast</span>
+                  <span>Neovim User</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Database className="w-4 h-4 text-tech-blue" />
-                  <span>Big Data Expert</span>
+                  <span>Machine Learning Expert</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Zap className="w-4 h-4 text-accent" />
@@ -187,7 +187,7 @@ const About = () => {
                     </div>
                     <div>
                       <p className="font-medium text-foreground mb-2">Programming</p>
-                      <p className="text-muted-foreground">Python, SQL, R, JavaScript, Lua (Neovim)</p>
+                      <p className="text-muted-foreground">Python, SQL, R, JavaScript, GO</p>
                     </div>
                     <div>
                       <p className="font-medium text-foreground mb-2">Tools & Platforms</p>
