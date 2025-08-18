@@ -15,7 +15,8 @@ const Projects = () => {
       image: "/api/placeholder/400/250",
       tags: ["Python", "Scikit-learn", "Pandas", "XGBoost"],
       category: "Machine Learning",
-      status: "Completed"
+      status: "Completed",
+      github: "https://github.com/yourusername/customer-churn-prediction"
     },
     {
       title: "Real-time Sentiment Analysis",
@@ -23,7 +24,8 @@ const Projects = () => {
       image: "/api/placeholder/400/250",
       tags: ["Python", "BERT", "Kafka", "Docker"],
       category: "NLP",
-      status: "Completed"
+      status: "Completed",
+      github: "https://github.com/yourusername/realtime-sentiment-analysis"
     },
     {
       title: "Computer Vision QA System",
@@ -31,7 +33,8 @@ const Projects = () => {
       image: "/api/placeholder/400/250",
       tags: ["PyTorch", "OpenCV", "FastAPI", "AWS"],
       category: "Computer Vision",
-      status: "Completed"
+      status: "Completed",
+      github: "https://github.com/yourusername/computer-vision-qa"
     },
     {
       title: "Time Series Forecasting",
@@ -39,7 +42,8 @@ const Projects = () => {
       image: "/api/placeholder/400/250",
       tags: ["TensorFlow", "LSTM", "Prophet", "MLflow"],
       category: "Time Series",
-      status: "In Progress"
+      status: "In Progress",
+      github: "https://github.com/yourusername/time-series-forecasting"
     },
     {
       title: "Recommendation Engine",
@@ -47,7 +51,8 @@ const Projects = () => {
       image: "/api/placeholder/400/250",
       tags: ["Python", "TensorFlow", "Redis", "Kubernetes"],
       category: "Recommender Systems",
-      status: "Completed"
+      status: "Completed",
+      github: "https://github.com/yourusername/recommendation-engine"
     },
     {
       title: "Neovim ML Plugin",
@@ -55,7 +60,8 @@ const Projects = () => {
       image: "/api/placeholder/400/250",
       tags: ["Lua", "Python", "Neovim", "Machine Learning"],
       category: "Open Source",
-      status: "Ongoing"
+      status: "Ongoing",
+      github: "https://github.com/yourusername/neovim-ml-plugin"
     },
     {
       title: "Data Pipeline Automation",
@@ -63,7 +69,8 @@ const Projects = () => {
       image: "/api/placeholder/400/250",
       tags: ["Apache Airflow", "Python", "SQL", "Docker"],
       category: "Data Engineering",
-      status: "Completed"
+      status: "Completed",
+      github: "https://github.com/yourusername/data-pipeline-automation"
     },
     {
       title: "Financial Risk Model",
@@ -71,7 +78,8 @@ const Projects = () => {
       image: "/api/placeholder/400/250",
       tags: ["Python", "XGBoost", "SHAP", "Pandas"],
       category: "Machine Learning",
-      status: "Completed"
+      status: "Completed",
+      github: "https://github.com/yourusername/financial-risk-model"
     }
   ];
 
@@ -133,7 +141,11 @@ const Projects = () => {
                     <Eye className="w-4 h-4 mr-2" />
                     Demo
                   </Button>
-                  <Button size="sm" variant="secondary">
+                  <Button 
+                    size="sm" 
+                    variant="secondary"
+                    onClick={() => window.open(project.github, '_blank')}
+                  >
                     <Github className="w-4 h-4 mr-2" />
                     Code
                   </Button>
