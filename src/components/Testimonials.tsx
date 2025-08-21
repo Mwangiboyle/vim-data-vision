@@ -21,13 +21,12 @@ const Testimonials = () => {
       content: "Working with Joseph was a game-changer for our recommendation engine. Customer engagement increased by 45% after implementing his ML solution. He explained complex concepts clearly and delivered exactly what we needed."
     },
     {
-      name: "David Otieno",
-      role: "Data Manager",
-      company: "AgriTech Innovations",
+      name: "Bilal Afzal",
+      role: "Manager",
+      company: "Brain AI freelance Agency",
       avatar: "/api/placeholder/60/60",
       rating: 5,
-      content: "Joseph helped us build a crop yield prediction model that farmers across Kenya now rely on. His understanding of both technology and agriculture made this project incredibly successful. Highly recommended!"
-    },
+      content: "Joseph delivered a RAG chatbot solution that transformed how several departments in our company access and use information. His deep AI knowledge and practical implementation skills made the project highly impactful." },
     {
       name: "Mary Njeri",
       role: "Operations Director", 

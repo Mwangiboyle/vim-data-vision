@@ -12,7 +12,7 @@ const Projects = () => {
     {
       title: "Customer Churn Prediction",
       description: "ML model predicting customer churn with 94% accuracy using ensemble methods and feature engineering techniques.",
-      image: "/api/placeholder/400/250",
+      image: "/churn.jpeg",
       tags: ["Python", "Scikit-learn", "Pandas", "XGBoost"],
       category: "Machine Learning",
       status: "Completed",
@@ -23,7 +23,7 @@ const Projects = () => {
     {
       title: "Real-time Sentiment Analysis",
       description: "NLP system for real-time social media sentiment analysis using transformer models and streaming data processing.",
-      image: "/api/placeholder/400/250",
+      image: "/sentiment.jpeg",
       tags: ["Python", "BERT", "Kafka", "Docker"],
       category: "NLP",
       status: "Completed",
@@ -34,7 +34,7 @@ const Projects = () => {
     {
       title: "Computer Vision QA System",
       description: "Automated quality assurance system using computer vision for manufacturing defect detection with 99.2% precision.",
-      image: "/api/placeholder/400/250",
+      image: "/vision.jpeg",
       tags: ["PyTorch", "OpenCV", "FastAPI", "AWS"],
       category: "Computer Vision",
       status: "Completed",
@@ -45,7 +45,7 @@ const Projects = () => {
     {
       title: "Time Series Forecasting",
       description: "Advanced forecasting system for demand prediction using LSTM networks and statistical methods.",
-      image: "/api/placeholder/400/250",
+      image: "/time_series.jpeg",
       tags: ["TensorFlow", "LSTM", "Prophet", "MLflow"],
       category: "Time Series",
       status: "In Progress",
@@ -56,7 +56,7 @@ const Projects = () => {
     {
       title: "Recommendation Engine",
       description: "Collaborative filtering recommendation system serving 1M+ users with sub-100ms latency.",
-      image: "/api/placeholder/400/250",
+      image: "/image.jpeg",
       tags: ["Python", "TensorFlow", "Redis", "Kubernetes"],
       category: "Recommender Systems",
       status: "Completed",
@@ -67,7 +67,7 @@ const Projects = () => {
     {
       title: "Neovim ML Plugin",
       description: "Custom Neovim plugin for ML model development with integrated data exploration and model training capabilities.",
-      image: "/api/placeholder/400/250",
+      image: "/neovim.jpeg",
       tags: ["Lua", "Python", "Neovim", "Machine Learning"],
       category: "Open Source",
       status: "Ongoing",
@@ -78,7 +78,7 @@ const Projects = () => {
     {
       title: "Data Pipeline Automation",
       description: "Scalable ETL pipeline processing 10TB+ daily with Apache Airflow and real-time monitoring.",
-      image: "/api/placeholder/400/250",
+      image: "/pipeline.jpeg",
       tags: ["Apache Airflow", "Python", "SQL", "Docker"],
       category: "Data Engineering",
       status: "Completed",
@@ -89,7 +89,7 @@ const Projects = () => {
     {
       title: "Financial Risk Model",
       description: "Deep learning model for credit risk assessment with interpretable feature importance analysis.",
-      image: "/api/placeholder/400/250",
+      image: "/financial.jpeg",
       tags: ["Python", "XGBoost", "SHAP", "Pandas"],
       category: "Machine Learning",
       status: "Completed",
@@ -111,7 +111,7 @@ const Projects = () => {
     ? filteredProjects 
     : filteredProjects.slice(0, 6);
 
-  return (
+ return (
     <section id="projects" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -132,7 +132,7 @@ const Projects = () => {
               size="sm"
               onClick={() => {
                 setSelectedCategory(category);
-                setShowAllProjects(false); // Reset to show limited projects when changing category
+                setShowAllProjects(false);
               }}
               className="hover:bg-primary hover:text-primary-foreground transition-colors"
             >
@@ -143,15 +143,18 @@ const Projects = () => {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {displayedProjects.map((project, index) => (
-            <Card 
+          {displayedProjects.map((project) => (
+            <div 
               key={project.title}
-              className="group overflow-hidden hover:shadow-elegant transition-all duration-500 hover:scale-105"
+              className="group overflow-hidden rounded-2xl shadow hover:shadow-lg transition-all duration-500 hover:scale-105 bg-white"
             >
-              <div className="relative overflow-hidden">
-                <div className="w-full h-48 bg-gradient-card flex items-center justify-center">
-                  <div className="text-muted-foreground text-sm">Project Preview</div>
-                </div>
+              {/* Project Image */}
+              <div className="relative">
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-48 object-cover"
+                />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
                   <Button 
                     size="sm" 
@@ -171,8 +174,9 @@ const Projects = () => {
                   </Button>
                 </div>
               </div>
-              
-              <CardHeader>
+
+              {/* Project Info */}
+              <div className="p-4">
                 <div className="flex items-center justify-between mb-2">
                   <Badge variant="secondary" className="text-xs">
                     {project.category}
@@ -184,38 +188,34 @@ const Projects = () => {
                     {project.status}
                   </Badge>
                 </div>
-                <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
                   {project.title}
-                </CardTitle>
-                <CardDescription className="text-sm">
+                </h3>
+                <p className="text-sm text-muted-foreground mb-3">
                   {project.description}
-                </CardDescription>
-              </CardHeader>
-              
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-4">
+                </p>
+                <div className="flex flex-wrap gap-2 mb-3">
                   {project.tags.map((tag) => (
                     <Badge key={tag} variant="outline" className="text-xs">
                       {tag}
                     </Badge>
                   ))}
                 </div>
-                <div className="flex space-x-2">
-                  <Button 
-                    size="sm" 
-                    variant="outline" 
-                    className="flex-1"
-                    onClick={() => window.open(project.blog, '_blank')}
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    View Details
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+                <Button 
+                  size="sm" 
+                  variant="outline" 
+                  className="w-full"
+                  onClick={() => window.open(project.blog, '_blank')}
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  View Details
+                </Button>
+              </div>
+            </div>
           ))}
         </div>
 
+        {/* Show More Button */}
         {filteredProjects.length > 6 && (
           <div className="text-center mt-12">
             <Button 
