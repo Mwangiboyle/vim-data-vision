@@ -44,15 +44,19 @@ const About = () => {
       institution: "Coursera",
       period: "2022",
       gpa: "Completed with Honors"
+    },
+     {
+      degree: "Bachelor of Industrial Chemistry",
+      institution: "JKUAT University",
+      period: "2021 - 2024",
+      gpa: "completed with honors"
     }
   ];
 
   const certifications = [
     "ALX Data Analytics Professional Certificate",
     "ALX Professional Foundations Certificate",
-    "Microsoft Azure AI Fundamentals",
-    "AWS Cloud Practitioner",
-    "TensorFlow Developer Certificate"
+    "Topcoder Machine Learning with Python",
   ];
 
   return (
