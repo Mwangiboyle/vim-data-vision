@@ -16,7 +16,7 @@ const Projects = () => {
       tags: ["Python", "Scikit-learn", "Pandas", "XGBoost"],
       category: "Machine Learning",
       status: "Completed",
-      github: "https://github.com/yourusername/customer-churn-prediction",
+      github: "https://github.com/Mwangiboyle/Customer_churn_prediction",
       demo: "https://churn-prediction-demo.herokuapp.com",
       blog: "https://yourblog.com/customer-churn-prediction-project"
     },
@@ -27,7 +27,7 @@ const Projects = () => {
       tags: ["Python", "BERT", "Kafka", "Docker"],
       category: "NLP",
       status: "Completed",
-      github: "https://github.com/yourusername/realtime-sentiment-analysis",
+      github: "https://github.com/Mwangiboyle/Sentiment-Analysis-With-Machine-Learning",
       demo: "https://sentiment-analyzer-demo.netlify.app",
       blog: "https://yourblog.com/realtime-sentiment-analysis-with-bert"
     },
@@ -38,7 +38,7 @@ const Projects = () => {
       tags: ["PyTorch", "OpenCV", "FastAPI", "AWS"],
       category: "Computer Vision",
       status: "Completed",
-      github: "https://github.com/yourusername/computer-vision-qa",
+      github: "https://github.com/Mwangiboyle/Plant_leaf_identification",
       demo: "https://cv-qa-system.vercel.app",
       blog: "https://yourblog.com/computer-vision-quality-assurance"
     },
@@ -49,7 +49,7 @@ const Projects = () => {
       tags: ["TensorFlow", "LSTM", "Prophet", "MLflow"],
       category: "Time Series",
       status: "In Progress",
-      github: "https://github.com/yourusername/time-series-forecasting",
+      github: "https://github.com/Mwangiboyle/Fraud-detection-with-machine-learning",
       demo: "https://forecast-demo.streamlit.app",
       blog: "https://yourblog.com/lstm-time-series-forecasting"
     },
@@ -60,7 +60,7 @@ const Projects = () => {
       tags: ["Python", "TensorFlow", "Redis", "Kubernetes"],
       category: "Recommender Systems",
       status: "Completed",
-      github: "https://github.com/yourusername/recommendation-engine",
+      github: "https://github.com/Mwangiboyle/movie_recommendation_system",
       demo: "https://rec-engine-demo.herokuapp.com",
       blog: "https://yourblog.com/scalable-recommendation-engine"
     },
@@ -71,7 +71,7 @@ const Projects = () => {
       tags: ["Lua", "Python", "Neovim", "Machine Learning"],
       category: "Open Source",
       status: "Ongoing",
-      github: "https://github.com/yourusername/neovim-ml-plugin",
+      github: "https://github.com/Mwangiboyle/Neovim_config",
       demo: "https://asciinema.org/a/neovim-ml-plugin-demo",
       blog: "https://yourblog.com/neovim-ml-plugin-development"
     },
@@ -82,7 +82,7 @@ const Projects = () => {
       tags: ["Apache Airflow", "Python", "SQL", "Docker"],
       category: "Data Engineering",
       status: "Completed",
-      github: "https://github.com/yourusername/data-pipeline-automation",
+      github: "https://github.com/Mwangiboyle/data-pipeline-automation",
       demo: "https://airflow-demo.yourdomain.com",
       blog: "https://yourblog.com/building-scalable-data-pipelines"
     },
@@ -93,7 +93,7 @@ const Projects = () => {
       tags: ["Python", "XGBoost", "SHAP", "Pandas"],
       category: "Machine Learning",
       status: "Completed",
-      github: "https://github.com/yourusername/financial-risk-model",
+      github: "https://github.com/Mwangiboyle/financial-risk-model",
       demo: "https://risk-model-demo.streamlit.app",
       blog: "https://yourblog.com/interpretable-financial-risk-modeling"
     }

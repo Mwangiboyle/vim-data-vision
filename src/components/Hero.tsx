@@ -27,7 +27,7 @@ const Hero = () => {
           <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
             Turning complex data into smart business solutions. From predictive analytics to 
             real-time AI systems, I build models that actually work. Coffee-powered coding 
-            sessions in <span className="text-accent font-semibold">Neovim</span> since 2019.
+            sessions in <span className="text-accent font-semibold">Neovim</span> since 2025.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
