@@ -15,21 +15,15 @@ const About = () => {
     {
       title: "Freelance ML Engineer",
       company: "Independent Consultant",
-      period: "2023 - Present",
+      period: "2022 - Present",
       description: "Building custom ML solutions for fintech and e-commerce clients. Specialized in fraud detection and recommendation systems. Also fine-tuned LLMs and developed RAG Systems."
     },
     {
-      title: "Machine Learning Engineer",
-      company: "Brain. AI",
-      period: "2023 - 2024",
-      description: "Developed loan default prediction models and automated risk assessment pipelines using Python and SQL."
-    },
-    {
-      title: "Junior Data Analyst",
-      company: "Redfin(US)",
-      period: "2022 - 2023",
-      description: "Developed a machine learning model using Python, Scikit-learn to predict house prices from different areas"
-    }
+      title: "Volunteer AI Expert",
+      company: "EUSMS",
+      period: "Sep 2025 - Present",
+      description: "Developed and deployed AI-driven tools for content generation, including text, image, and short-form video creation to enhance marketing campaigns.Implemented open-source generative AI models (e.g., Stable Diffusion, LLaVA, Whisper, Llama) for automating creative and analytical marketing tasks."
+    }, 
   ];
 
   const education = [
